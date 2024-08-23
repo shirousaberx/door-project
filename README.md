@@ -6,4 +6,4 @@
 2. `python3 -m venv env`
 3. `source env/bin/activate`
 4. `pip install -r requirements.txt`
-5. `python3 raspberry.py`
+5. `python3 script.py`
