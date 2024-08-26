@@ -34,7 +34,7 @@ while True:
 	if response.status_code == 200:
 
 		print('QR Authenticated')
-		Proses buka pintu
+		# Proses buka pintu
 		GPIO.setmode(GPIO.BCM)
 		RELAIS_1_GPIO = 15;
 
@@ -47,7 +47,7 @@ while True:
 		GPIO.output (RELAIS_1_GPIO, GPIO.HIGH)
 
 		GPIO.cleanup()
-		End proses buka pintu
+		# End proses buka pintu
 
 	elif response.status_code == 404:
 		print("QR doesn't exist")
