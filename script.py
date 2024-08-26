@@ -8,12 +8,8 @@ import time
 import requests
 import os
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
-BASE_URL = os.getenv('BASE_URL')
-VEFIRY_URL = BASE_URL + os.getenv('VERIFY_URL')
+BASE_URL = 'http://172.200.200.10'
+VEFIRY_URL = BASE_URL + '/qr/verify'
 
 while True:
 
@@ -40,7 +36,7 @@ while True:
 
 		GPIO.setup(RELAIS_1_GPIO,GPIO.OUT) 
 		GPIO.output (RELAIS_1_GPIO, GPIO.HIGH) # out 
-		GP10.output (RELAIS_1_GPIO, GPIO.LOW) # on
+		GPIO.output (RELAIS_1_GPIO, GPIO.LOW) # on
 
 		time.sleep(3)
 
